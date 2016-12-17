@@ -1,0 +1,57 @@
+Servicios Aeropuertos (Ingresos Regulados)
+------------------------------------------
+
+1. ATERRIZAJE, DESPEGUE, CARGA, ESTACIONAMIENTO, RAMPA.
+2. TUUA (Cobro realizado al PAX por despegar)
+3. LOCATARIOS (CONTRATOS en SAP)
+4. COMBUSTIBLE
+
+[Prueba-Git]
+
+Tarifario Anual.
+-Publica a finales del año anterior.
+-Se registra en el sistema ERP.
+
+Operacion
+----------
+
+Composición:    1. ATERRIZAJE
+                2. CARGA ATERRIZAJE
+                3. DESPEGUE
+                4. CARGA DESPEGUE
+                5. ESTACIONAMIENTO
+                6. RAMPA
+
+Datos relevantes de una operacion:  ===> "TARIFARIO" ===> (FACTURA).
+Aeronave: Matricula, Tipo Aeronave, n° PMD (PesoMaximoDespegue)
+
+Clases Vuelo: COMERCIAL, VPE, TARIFA 1$, CARGUERO (Ver ZSD001)
+*Comercial:
+*CHARTER: Vuelos realizados por empresas/personas naturales, donde alquilan aeronaves comerciales.
+*Cargueros: Exonerados de IGV. AdP no ha tenido ningún vuelo carguero. Comportamiento: Comercial sin IGV.
+*Tarifa $1: Todos sus servicios se factura $1 x operacion. (ATE, DES, CAR, EST)
+*Prueba y Entrenamiento: Las escuelas o asociaciones pagan a fines del año anterior, y además de presentar la documentación.
+                        Documentación: Documento con aeronaves y en que sedes (aptos) operaran, pagos 100$.
+                        Escuela => Asistente Administrativo Apto => Operaciones Lima => Sistemas (ZSD001).
+
+Clases Vuelos Facturan:     COM, CARGUERO, TARIFA 1$, CHARTER.
+Clases Vuelos No Facturan:  VPE
+
+
+Ambito: Nacional, Internacional
+
+Tipo Vuelo: Militar y No Militar
+
+
+
+
+
+
+Puntos a Revisar:
++TUUA
++Ejemplos de clase de vuelos en SAP
++Tarifario Aero. en SAP (VK13) y Ejemplos
++Formulas de Servicios Aero.
++Casusiticas
+
+3300000013  3300000014
